@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'book';
+  title = 'finalS1';
+  darkMode: boolean = false;
+
+  toggleDarkMode() {
+    this.darkMode = !this.darkMode;
+  }
 }

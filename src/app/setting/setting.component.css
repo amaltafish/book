@@ -1,0 +1,11 @@
+.app-container {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
