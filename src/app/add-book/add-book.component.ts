@@ -11,7 +11,7 @@ export class AddBookComponent {
   isValid= true;
   constructor(private serviceService: ServiceService) { }
 
-  add(formBody: any) {
+  add = (formBody: any) => {
     this.serviceService.addBook(formBody);
   }
 }

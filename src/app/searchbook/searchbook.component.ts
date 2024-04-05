@@ -12,9 +12,9 @@ export class SearchbookComponent {
 
   constructor(private httpclient: HttpClient) {}
 
-  searchBooks() {
-    const url = 'https://www.googleapis.com/books/v1/volumes?q=${this.searchQuery}';
-        this.httpclient.get(url).subscribe((response: any) => {
+  searchBooks=()=> {
+    const url = `https://www.googleapis.com/books/v1/volumes?q=${this.searchQuery}`;
+    this.httpclient.get(url).subscribe((response: any) => {
       this.booksOut = response.items || [];
     });
   }
