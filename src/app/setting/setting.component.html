@@ -16,8 +16,8 @@
     <ul>
         <li *ngFor="let manager of managers">{{ manager }}</li>
     </ul>
-    <button (click)="addManager(managerInput.value)"  [disabled]="managerInput.invalid" >Add</button>
-    <p *ngIf="managerInput.invalid && managerInput.touched && managerInput.value" style="color: red;">Name can not be empty</p>
+    <button (click)="addManager(managerInput.value)"  >Add</button>
+    <p>Name can not be empty</p>
     <p *ngIf="managers.length>2" ></p>
     </div>
 </div>
